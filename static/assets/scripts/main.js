@@ -1,10 +1,10 @@
 // Ads
 document.addEventListener('DOMContentLoaded', function () {
   if (localStorage.getItem('ad') === null) {
-    localStorage.setItem('ad', 'on')
+    localStorage.setItem('ad', 'off')
   }
 
-  if (localStorage.getItem('ad') === 'on') {
+  if (localStorage.getItem('ad') === 'No_ads') {
     var advDiv = document.getElementById('adv')
     if (advDiv) {
       var script = document.createElement('script')
